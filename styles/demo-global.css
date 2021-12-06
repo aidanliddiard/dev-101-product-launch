@@ -18,49 +18,6 @@ body {
   color: var(--zeus);
 }
 
-#hero-image {
-  /* for grid mode, the area for this element */
-  grid-area: image;
-
-  /* give the image a defined height and width,
-     then cover will make sure it covers that area */
-  object-fit: cover;
-  height: 50vh;
-  width: 100vw;
-}
-
-/* these css settings _only_ happen when the screen is 900px or more */
-@media (min-width: 900px) {
-  body {
-    /* take up the visible height of the "viewport" */
-    height: 100vh;
-
-    /* Use CSS Grid */
-    display: grid;
-    /* Two columns wide, three rows long */
-    /* even split 50/50 */
-    grid-template-columns: 50% 50%;
-    /* auto fit content for first two, 
-       then give remaining space to third row */
-    grid-template-rows: auto auto 1fr;
-    /* This is a "picture" of where each element should go */
-    grid-template-areas:
-      'header  image'
-      'lead image'
-      'signup  image';
-    /* Default positioning: stretch horizontally, center vertically */
-    justify-items: stretch;
-    align-items: center;
-  }
-
-  /* In wide mode, image should take up the full height,
-     but not go wider than the allotted column width */
-  #hero-image {
-    height: 100%;
-    max-width: 100%;
-  }
-}
-
 #header {
   /* for grid mode, the area for this element */
   grid-area: header;
@@ -70,9 +27,37 @@ body {
   /* Color and font settings for the header */
   color: var(--nomad);
   font-family: 'Amatic SC', 'Space Mono', monospace;
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 1.25;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+#bouquet-image {
+  /* for grid mode, the area for this element */
+  grid-area: image;
+
+  /* give the image a defined height and width,
+     then cover will make sure it covers that area */
+  object-fit: center;
+  height: auto;
+  width: 100%;
+}
+
+
+  /* In wide mode, image should take up the full height,
+     but not go wider than the allotted column width */
+  #hero-image {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
 
 #lead {
   /* for grid mode, the area for this element */
