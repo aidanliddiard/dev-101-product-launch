@@ -1,21 +1,20 @@
 /* Google Fonts import copied from the font-selection page */
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Space+Mono&display=swap');
 
 :root {
   /* css variables with theme colors,
     names have to start with "--" */
-  --nomad: #b9af9e;
-  --zeus: #221d14;
-  --irish-coffee: #604124;
-  --potters-clay: #836038;
-  --sinopia: #c25223ff;
+  --lola: #dacad0;
+  --pine-glade: #bfc985;
+  --raw-sienna: #D77C4F;
+  --black: rgb(0, 0, 0);
   --white: white;
 }
 
 body {
-  background: var(--potters-clay);
+  background: var(--lola);
   /* these become the default font settings for the reset of the page */
-  font-family: 'Patua One', sans-serif;
+  font-family: 'Space Mono', monospace;
   color: var(--zeus);
 }
 
@@ -70,7 +69,7 @@ body {
 
   /* Color and font settings for the header */
   color: var(--nomad);
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Amatic SC', 'Space Mono', monospace;
   font-size: 3rem;
   line-height: 1.25;
 }
