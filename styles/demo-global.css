@@ -15,7 +15,12 @@ body {
   background: var(--lola);
   /* these become the default font settings for the reset of the page */
   font-family: 'Space Mono', monospace;
-  color: var(--zeus);
+  position: relative;
+}
+
+#container {
+  position: relative;
+  display: inline-block;
 }
 
 #header {
@@ -30,9 +35,8 @@ body {
   top: 15px;
   left: 20px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
+
 
 #bouquet-image {
   /* for grid mode, the area for this element */
@@ -43,35 +47,25 @@ body {
   object-fit: center;
   height: auto;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
 }
-
-
-  /* In wide mode, image should take up the full height,
-     but not go wider than the allotted column width */
-  #hero-image {
-    height: 100%;
-    max-width: 100%;
-  }
-}
-
 
 #lead {
   /* Font settings for the lead */
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 2.5vw;
+  line-height: 1.25;
 
+  z-index: 100;
   position: absolute;
-  bottom: 15px;
-  right: 20px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-weight: bold;
+  left: 30vw;
+  bottom: 3vw;
 }
 
 #signup-form {
-  /* for grid mode, the area for this element */
-  grid-area: signup; 
-  
   /* Make the form go the full width so background color goes to the edges */
   width: 100%;
   background: var(--irish-coffee);
@@ -91,7 +85,8 @@ label, input, button {
 label {
   /* Color and font settings for label */
   color: var(--nomad);
-  font-size: 1.3rem;
+  font-size: 1.3vw;
+  font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
 
@@ -102,15 +97,17 @@ input {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 1.2rem;
+  padding-left: 75%;
+  padding-right: 10px;
 }
 
 button {
   /* Color and font settings for label */
   /* Bright color for Call To Action (CTA) */
-  background: var(--sinopia);
+  background: var(--pine-glade);
   color: var(--white);
   border: 0;
   padding: 20px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
 }
