@@ -34,14 +34,25 @@ body {
   position: absolute;
   top: 15px;
   left: 20px;
-  color: white;
+  color: var(--white);
+}
+
+#thankYouHeader {
+
+  /* Color and font settings for the header */
+  color: var(--nomad);
+  font-family: 'Amatic SC', 'Space Mono', monospace;
+  font-size: 10vw;
+  line-height: 1.25;
+
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: var(--raw-sienna);
 }
 
 
 #bouquet-image {
-  /* for grid mode, the area for this element */
-  grid-area: image;
-
   /* give the image a defined height and width,
      then cover will make sure it covers that area */
   object-fit: center;
@@ -59,10 +70,21 @@ body {
 
   z-index: 100;
   position: absolute;
-  color: white;
+  color: var(--white);
   font-weight: bold;
   left: 30vw;
   bottom: 3vw;
+}
+
+#thankYouLead {
+  /* Font settings for the lead */
+  font-size: 5vw;
+
+  position: center;
+  color: var(--black);
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 #signup-form {
@@ -84,8 +106,8 @@ label, input, button {
 
 label {
   /* Color and font settings for label */
-  color: var(--nomad);
-  font-size: 1.3vw;
+  color: var(--black);
+  font-size: 2vw;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
@@ -96,8 +118,8 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 10px;
-  font-size: 1.2rem;
-  padding-left: 75%;
+  font-size: 1.5rem;
+  padding: 20px;
   padding-right: 10px;
 }
 
