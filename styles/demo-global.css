@@ -48,7 +48,7 @@ body {
   position: absolute;
   top: 10px;
   left: 20px;
-  color: var(--raw-sienna);
+  color: var(--black);
 }
 
 
@@ -65,8 +65,9 @@ body {
 
 #lead {
   /* Font settings for the lead */
-  font-size: 2.5vw;
+  font-size: 3vw;
   line-height: 1.25;
+  
 
   z-index: 100;
   position: absolute;
@@ -90,10 +91,10 @@ body {
 #signup-form {
   /* Make the form go the full width so background color goes to the edges */
   width: 100%;
-  background: var(--irish-coffee);
+  background: var(--lola);
   
   /* Add padding on all sides */
-  padding: 60px;
+  padding: 40px;
 }
 
 label, input, button {
@@ -102,12 +103,13 @@ label, input, button {
   /* Go wide, but not wider than 450px */
   width: 100%;
   max-width: 450px;
+  position: center;
 }
 
 label {
   /* Color and font settings for label */
   color: var(--black);
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
