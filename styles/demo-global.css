@@ -19,19 +19,15 @@ body {
 }
 
 #header {
-  /* for grid mode, the area for this element */
-  grid-area: header;
-  /* Add padding to left and right sides */
-  padding: 0 60px;
 
   /* Color and font settings for the header */
   color: var(--nomad);
   font-family: 'Amatic SC', 'Space Mono', monospace;
-  font-size: 5rem;
+  font-size: 13vw;
   line-height: 1.25;
 
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
   color: white;
   padding-left: 20px;
@@ -60,14 +56,16 @@ body {
 
 
 #lead {
-  /* for grid mode, the area for this element */
-  grid-area: lead;
-  /* Add padding on all sides except the top */
-  padding: 0 60px 60px 60px;
-
   /* Font settings for the lead */
   font-size: 1.3rem;
   line-height: 1.5;
+
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #signup-form {
@@ -116,4 +114,3 @@ button {
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5rem;
 }
-
